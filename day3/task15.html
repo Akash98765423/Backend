@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = {name: "Bala",age: 25,role: "Frontend Developer",address: {city: "Chennai"}};
+
+            const displayProfile = ({name = "Guest",age = 18,role = "Developer",address}) => {
+            const city = address?.city ?? "Unknown City";
+
+                console.log(`Name: ${name}`);
+                console.log(`Age: ${age}`);
+                console.log(`Role: ${role}`);
+                console.log(`City: ${city}`);
+            };
+
+            const updateProfile = (user, newAge, newRole) => {
+                return {...user,age: newAge,role: newRole};};
+
+            displayProfile(user); 
+
+            const updatedUser = updateProfile(user,26,"Full Stack Developer");
+
+                console.log("\nUpdated Profile:");
+                displayProfile(updatedUser);
+
+                console.log("\nOriginal Age:", user.age);
+                console.log("Original Role:", user.role);
+    </script>
+</body>
+</html>

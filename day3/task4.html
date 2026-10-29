@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {name: "Akash",age : 20,city: "Chennai",course: "Front-End Developer"};
+
+        let recieve = ({name,age,city,course}) => {
+            console.log("Student:", `${name}`);
+            console.log("Age:", `${age}`);
+            console.log("City:", `${city}`);
+            console.log("Course:", `${course}`); 
+        }
+        recieve(student)
+    </script>
+</body>
+</html>

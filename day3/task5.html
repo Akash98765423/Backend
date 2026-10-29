@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const product = {
+            product: "Laptop",
+            price: 600000,
+            quantity: 2
+        };
+
+        let calculate =({product,price,quantity}) => {
+            let total = price*quantity
+            console.log(`${product}`);
+            console.log("Price:",`${price}`);
+            console.log("Quantity:",`${quantity}`);
+            console.log("Total:",`${total}`);
+        }
+        calculate(product)
+    </script>
+</body>
+</html>
